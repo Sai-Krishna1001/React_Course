@@ -1,0 +1,27 @@
+Q. What Exactly is React? and why would we use it?
+A. ReactJs is a declarative, efficient and flexible Javascript library for building fast and interactive user interfaces.
+
+-->React do not have built-in solution for handling Routing, HttpCore etc.
+
+Q. Why would we learn React?
+A. 	1. Market Demand
+	2. High Performance(speed)
+	-->Internally, React uses some clever techniques to minimize the number 	of costly DOM operations that is required to update the UI
+	-->It can change data over time without having to reload the page
+	3. Strong Engineering Team(meta)
+	4. Large community and Popularity(w3 schools, etc)
+
+-->Components are one of the basic building blocks of React.
+
+Q. What is a Component?
+A.  
+
+Q. How do we pass data from componentA to componentB?
+A. In React, data can be passed from one component(ComponentA) to another component(ComponentB) through the use of props. Props(short for properties) are a way to pass data from a parent component to its child components.
+
+--> props(properties): It is an object that stores the value of an attribute of a tag.
+--> props are immutable.
+
+
+
+	
