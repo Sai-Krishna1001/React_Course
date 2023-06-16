@@ -1,11 +1,12 @@
 import React from 'react';
 
-export default function DemoComponent(props){
-    console.log(props);
+export default function DemoComponent({name, country, children}){
+    // console.log(props);
+    // props.name = 'sai';
     return(
         <div>
-           <h1>I am {props.name} from {props.country}</h1>
-           <h2>{props.children}</h2>
+           <h1>I am {name} from {country}</h1>
+           <h2>{children}</h2>
         </div>
     )
 }
