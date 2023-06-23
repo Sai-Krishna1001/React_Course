@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function DemoComponent({name, country, children}){
+export default function DemoComponent({name, country , children}){
     // console.log(props);
     // props.name = 'sai';
     return(
