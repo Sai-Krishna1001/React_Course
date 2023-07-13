@@ -5,6 +5,11 @@ import Toggle from './components/Toggle';
 import TodoList from './components/TodoList';
 import DynamicForm from './components/DynamicForm';
 import UseEffect from './components/UseEffect';
+import Timer from './components/Timer';
+import GeoLocation from './components/GeoLocation';
+import Test from './components/Test';
+import OnSubmit from './components/OnSubmit';
+import Map from './components/Map';
 
 export default function App() {
   
@@ -12,26 +17,19 @@ export default function App() {
     <div>
       <Counter />
       <OnClick /> 
-      <ItemList />
       <Toggle />
       <TodoList />
       <DynamicForm /> 
       <UseEffect />
+      <Timer />
+      <GeoLocation />
+      <Test />
+      <OnSubmit />
+      <Map />
     </div>
   )
 }
 
-function ItemList(){
-  const items = ['Apple', 'Banana', 'Orange'];
-  return(
-    <ul>
-      {
-        items.map((item,index)=>(
-          <li key={index}>{item}</li>
-        ))
-      }
-    </ul>
-  )
-}
+
 
 

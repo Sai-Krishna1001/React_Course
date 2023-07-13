@@ -1,14 +1,19 @@
 import React, {useState, useEffect} from 'react'
 
 const UseEffect = () => {
-    const [count, setCount] = useState(0);
-    useEffect(()=>{
-        console.log("clicked",[]);
-    })
+    const [mousePosition, setMousePosition] = useState({x:0, y:0});
+    useEffect(() =>{
+        const handleMouseMove = (event) => {
+            setMousePosition({x: event.clientX, y: event.clientY});
+        };
+        document.addEventListener('mousemove', handleMouseMove);
+        return ()=>{
+            document.removeEventListener('mousemove', handleMouseMove);
+        }
+    },[]);
     return (
         <div>
-            <p>count: {count}</p>
-            <button onClick={()=>{setCount(count+1)}}>Increment</button>
+            <p>Mouse position: {mousePosition.x}, {mousePosition.y}</p>
         </div>
     )
 }

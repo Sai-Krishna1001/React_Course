@@ -38,6 +38,15 @@ Note: Hooks will not work in React class components.
 --> useContext -- for accessing context values
 --> useRef -- for accessing and manipulating DOM elements.
 
+--> The main difference between 'OnClick' and 'onChange' lies in the purpose and 
+associated elements. 'onClick' is used to handle click interactions with various HTML elements, while 'onChange' is 
+primarily used with input elements to capture and respond to changes in their values.
 
+--> 'setTimeout' triggers the execution of a function once after a specified delay,
+while 'setInterval' triggers the execution of a function repeatedly at a specified interval 
+until explicitly stopped. 
 
+--> The 'onSubmit' event is triggered when a form is submitted, either by clicking a submit button or by pressing the Enter key while focussed on an input field within the form.
+
+-->
 	
