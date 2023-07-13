@@ -22,6 +22,22 @@ A. In React, data can be passed from one component(ComponentA) to another compon
 --> props(properties): It is an object that stores the value of an attribute of a tag.
 --> props are immutable.
 
+Q. What is a Hook?
+A. Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+Hook Rules
+============
+--> Hooks can only be called inside React function components.
+--> Hooks can only be called at the top level of a component.
+--> Hooks cannot be eConditional
+
+Note: Hooks will not work in React class components.
+
+--> useState -- for managing component state
+--> useEffect -- for handling side effects
+--> useContext -- for accessing context values
+--> useRef -- for accessing and manipulating DOM elements.
+
 
 
 	
