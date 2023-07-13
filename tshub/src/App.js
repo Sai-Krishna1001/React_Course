@@ -10,6 +10,9 @@ import GeoLocation from './components/GeoLocation';
 import Test from './components/Test';
 import OnSubmit from './components/OnSubmit';
 import Map from './components/Map';
+import FlattenList from './components/FlattenList';
+import Filter from './components/Filter';
+import Reduce from './components/Reduce';
 
 export default function App() {
   
@@ -26,6 +29,9 @@ export default function App() {
       <Test />
       <OnSubmit />
       <Map />
+      <FlattenList />
+      <Filter />
+      <Reduce />
     </div>
   )
 }

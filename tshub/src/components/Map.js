@@ -127,12 +127,17 @@ const NumberListComponent = ()=>{
 const FlattenedListComponent = ()=>{
     const nestedArray = [[1,2], [3,4], [5,6]];
     const flattenedList = nestedArray.flat();
+    
     return (
-        <ul>
-        {
-            flattenedList.map((item,index) => <li key={index}>{item}</li>)
-        }
-        </ul>
+        <div>
+            <ul>
+                {
+                    flattenedList.map((item,index) => <li key={index}>{item}</li>)
+                }
+            </ul>
+           
+        </div>
+        
     );
 }
 export default Map
