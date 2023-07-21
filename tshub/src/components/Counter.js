@@ -8,11 +8,15 @@ const Counter = () => {
     const decrement = ()=>{
       setCount(count-1);
     }
+    const reset = ()=>{
+      setCount(0);
+    }
   return (
     <div>
       <h1>Count = {count}</h1>
+      <button type="button" onClick={reset}>Reset</button>
       <button type="button" onClick={increment}>Increment</button>
-      <button type="button" onClick={decrement}>decrement</button>
+      <button type="button" onClick={decrement}>Decrement</button>
     </div>
   )
 }

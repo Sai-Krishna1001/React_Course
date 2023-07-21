@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&family=Press+Start+2P&display=swap');
+
+:root{
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+
+*{
+  margin: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  all:unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+  align-items: center;
+}
+nav img{
+  height: 44px;
+  width: 44px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}

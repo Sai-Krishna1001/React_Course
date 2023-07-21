@@ -1,13 +1,17 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 const Test = () => {
-    const items = [20, 30, 40, 80, 40,];
-    const itemsList = items.map((item,index) => {
-        return <li key={index}>{item}</li>
-    });
+    const[age, setAge] = useState(0);
+    const handleClick = () => setAge(age+1);
+    useEffect(()=>{
+        document.title = "title " + age + ' times updated'
+    })
+    
     return (
         <div>
-            <ul>{itemsList}</ul>
+            <h1>Test case</h1>
+            <button onClick={handleClick}>Update Title</button>
+            
         </div>
     )
 }

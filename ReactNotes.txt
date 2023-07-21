@@ -38,6 +38,13 @@ Note: Hooks will not work in React class components.
 --> useContext -- for accessing context values
 --> useRef -- for accessing and manipulating DOM elements.
 
+--> The 'useContext' hook is used ot consume the value from a React
+context. Context providesa a way to pass data through the component tree 
+without having to pass props manually at every level. It allows components
+to access data or share state without the need for prop drilling.
+
+
+
 --> The main difference between 'OnClick' and 'onChange' lies in the purpose and 
 associated elements. 'onClick' is used to handle click interactions with various HTML elements, while 'onChange' is 
 primarily used with input elements to capture and respond to changes in their values.
