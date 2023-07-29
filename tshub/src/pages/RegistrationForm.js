@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
+import axios from 'axios';
 
 const RegistrationForm = () => {
 
@@ -11,14 +12,20 @@ const RegistrationForm = () => {
   });
 
   const handleSubmit = (event)=>{
-    event.preventDefault();
-    if(formData.name.length < 5){
+    
+    if(formData.username.length < 5){
       alert("username must be atleast 5 characters");
     }else if(formData.password !== formData.confirmPassword){
       alert('Passwords do not match!');
     }else{
-      alert("User Registered Successfully");
-      console.log(formData);
+      event.preventDefault();
+      axios.post("https://registerform-a8654-default-rtdb.firebaseio.com/register.json", formData)
+      .then(() => {
+        alert("User Registered Successfully");
+        console.log(formData);
+    })
+
+      
     }
   }
   const {username, email, password, confirmPassword} = formData;
@@ -29,9 +36,9 @@ const RegistrationForm = () => {
     <div className="container">
      
       <h2>Registration Form</h2>
-      <form onSubmit={handleSubmit}>
+      <form autoComplete='off' onSubmit={handleSubmit}>
         <div className='input-group'>
-          <input type="text" name="name" value={username} onChange={handleChange} placeholder='Username' required />
+          <input type="text" name="username" value={username} onChange={handleChange} placeholder='Username' required />
         </div>
         <div className='input-group'>
           <input type="email" name="email" value={email} onChange={handleChange} placeholder='Email' required />

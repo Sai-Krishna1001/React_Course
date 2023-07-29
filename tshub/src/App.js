@@ -19,6 +19,11 @@ import Translation from './components/Translation';
 import CounterReducer from './components/CounterReducer';
 import RegistrationForm from './pages/RegistrationForm';
 import Calculator from './pages/Calculator';
+import UseQuery from './components/UseQuery';
+import FetchAPI from './components/FetchAPI';
+import AxiosComponent from './api/AxiosComponent';
+import GetRequest from './api/GetRequest';
+import Navbar from './routing/Navbar';
 export default function App() {
   
   return (
@@ -42,7 +47,11 @@ export default function App() {
       <Translation />
       <CounterReducer /> */}
       {/* <RegistrationForm /> */}
-      <Calculator />
+      {/* <UseQuery /> */}
+      {/* <FetchAPI /> */}
+      {/* <AxiosComponent />
+      <GetRequest /> */}
+      <Navbar />
     </div>
   )
 }

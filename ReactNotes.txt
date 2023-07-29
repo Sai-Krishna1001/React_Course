@@ -2,6 +2,9 @@ Q. What Exactly is React? and why would we use it?
 A. ReactJs is a declarative, efficient and flexible Javascript library for building fast and interactive user interfaces.
 
 -->React do not have built-in solution for handling Routing, HttpCore etc.
+-->React is front-end JavaScript library and used for building 
+component based user interfaces UI.
+--> It is maintained by Facebook.
 
 Q. Why would we learn React?
 A. 	1. Market Demand
@@ -55,5 +58,48 @@ until explicitly stopped.
 
 --> The 'onSubmit' event is triggered when a form is submitted, either by clicking a submit button or by pressing the Enter key while focussed on an input field within the form.
 
--->
+=================REDUX IN REACTJS=========================
+--> It is all about Managing state values in multiple components at
+a time, using redux store 
+
+--> Dependencies to be installed for Redux 
+	--> npm install redux 
+	--> npm install react-redux 
+	--> npm install redux-thunk 
+
+--> mapStateToProps: Function that you would use to provide the store data to your component.
+--> mapDispatchToprops: It is use to provide the action creators as props to your component.
+
+Q. What is JSX in React.js?
+A.	--> JSX stands for Javascript XML.
+	--> JSX allows us to write HTML in React.
+	eg: const tag = <h1> text </h1>
+
+Q. What is useContext hook?
+A. useContext hook allows passing data to children elements without using redux.
+
+Q. What is redux in react?
+A. Redux is an open-source Javascript library and used to manage state values globally.
+
+Q. What is Redux Thunk in React?
+A. Redux Thunk middleware allows you to write action creators that return
+	a function instead of an action.
+
+Q. What is the use of React Hooks?
+A. Hooks are functions use to manage both React State and lifecycle 
+	features from function components.
+
+	--> Hooks don't work inside classes!
+
+Q. What is mounting and unmounting in React?
+A. 	Mounting is the process of outputting or additional component to the DOM.
+	Unmounting is the process of removing or blocking them from the DOM.
+
+Q. Which DOM is faster in react?
+A.	Virtual DOM is extremely faster because it is an abstraction of the HTML DOM and lightweight.
+	Real DOM is bit slower because of update the content, structure, and style of a document.
+
+Q. 
+
+
 	

@@ -5,7 +5,7 @@ export const ThemeContext = createContext();
 function ThemeProvider() {
 
   const [darkMode, setDarkMode] = useState(false);
-
+  
   return (
     <ThemeContext.Provider value={{darkMode, setDarkMode}}>
       {children} 
